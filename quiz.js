@@ -1,5 +1,3 @@
-import React, { useState, useEffect } from 'react';
-
 const GDPQuiz = () => {
   // Current GDP per capita (2023 data in USD)
   const currentAnswers = {
