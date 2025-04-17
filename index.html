@@ -1,29 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Worldview Daily</title>
-  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worldview Daily</title>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-  <div id="root"></div>
-  
-  <!-- Note: Changed to inline script as a test -->
-  <script type="text/babel">
-    const Hello = () => {
-      return (
-        <div className="p-4 bg-blue-100">
-          <h1 className="text-2xl font-bold">Hello Worldview Daily!</h1>
-          <p>Simple test to make sure React is working.</p>
-        </div>
-      );
-    };
+    <div id="root"></div>
     
-    ReactDOM.render(<Hello />, document.getElementById('root'));
-  </script>
+    <script type="text/babel" src="quiz.js"></script>
 </body>
 </html>
