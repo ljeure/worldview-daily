@@ -476,7 +476,7 @@ const GDPQuiz = () => {
             </div>
             <div className="mt-4 text-sm text-gray-600 text-left">
               <p>Data sources: World Bank, IMF World Economic Outlook</p>
-              <p>Note: Historical figures are adjusted for inflation to 2023 dollars.</p><br>
+              <p>Note: Historical figures are adjusted for inflation to 2023 dollars.</p>
               <p>Come back tomorrow for a new quiz!>
             </div>
           </div>
