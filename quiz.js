@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+// import React, { useState, useEffect } from 'react';
 
 const GDPQuiz = () => {
   // Current GDP per capita (2023 data in USD)
@@ -23,7 +23,7 @@ const GDPQuiz = () => {
   const sliderMax = 115000; // 1.5x the maximum value
   
   // User's guesses
-  const [guesses, setGuesses] = useState({
+  const [guesses, setGuesses] = React.useState({
     currentUS: 38333,
     currentChina: 38333,
     currentSubSaharanAfrica: 38333,
@@ -37,9 +37,9 @@ const GDPQuiz = () => {
   });
   
   // State to track if quiz is submitted
-  const [submitted, setSubmitted] = useState(false);
+  const [submitted, setSubmitted] = React.useState(false);
   // State to track score
-  const [totalScore, setTotalScore] = useState(0);
+  const [totalScore, setTotalScore] = React.useState(0);
   
   // Calculate scores
   const calculateScore = (guess, actual) => {
@@ -70,7 +70,7 @@ const GDPQuiz = () => {
   };
   
   // Update the total score whenever submission state changes
-  useEffect(() => {
+  React.useEffect(() => {
     if (submitted) {
       setTotalScore(calculateTotalScore());
     }
