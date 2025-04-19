@@ -505,4 +505,4 @@ const LifeExpectancyQuiz = () => {
   );
 };
 
-ReactDOM.render(<GDPQuiz />, document.getElementById('root'));
+ReactDOM.render(<LifeExpectancyQuiz />, document.getElementById('root'));
