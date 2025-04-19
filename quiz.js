@@ -59,13 +59,13 @@ const LifeExpectancyQuiz = () => {
     total += calculateScore(guesses.currentUS, currentAnswers["United States"]);
     total += calculateScore(guesses.currentChina, currentAnswers["China"]);
     total += calculateScore(guesses.currentNigeria, currentAnswers["Africa"]);
-    total += calculateScore(guesses.currentIndia, currentAnswers["Europe"]);
-    total += calculateScore(guesses.currentGermany, currentAnswers["World"]);
+    total += calculateScore(guesses.currentIndia, currentAnswers["World"]);
+    total += calculateScore(guesses.currentGermany, currentAnswers["Europe"]);
     total += calculateScore(guesses.historicalUS, historicalAnswers["United States"]);
     total += calculateScore(guesses.historicalChina, historicalAnswers["China"]);
     total += calculateScore(guesses.historicalNigeria, historicalAnswers["Africa"]);
-    total += calculateScore(guesses.historicalIndia, historicalAnswers["Europe"]);
-    total += calculateScore(guesses.historicalGermany, historicalAnswers["World"]);
+    total += calculateScore(guesses.historicalIndia, historicalAnswers["World"]);
+    total += calculateScore(guesses.historicalGermany, historicalAnswers["Europe"]);
     return total;
   };
   
