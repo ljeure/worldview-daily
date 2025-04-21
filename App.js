@@ -18,8 +18,8 @@ const WorldviewDaily = () => {
   React.useEffect(() => {
     // Get the day of the week (or use override for testing)
     // Uncomment the next line and set a number 1-7 to test a specific day
-    // const dayNumber = 2; // Test day 2 (Life Expectancy)
-    const dayNumber = getDayOfWeek();
+    const dayNumber = 2; // Test day 2 (Life Expectancy)
+    // const dayNumber = getDayOfWeek();
     setCurrentDay(dayNumber);
     setQuizLoaded(true);
   }, []);
