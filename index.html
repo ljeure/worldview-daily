@@ -4,46 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Worldview Daily</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    
-    <!-- React and React DOM -->
     <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    
-    <!-- Babel for JSX transformation -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 min-h-screen py-8">
+<body>
     <div id="root"></div>
     
-    <!-- Import our application scripts -->
-    <script type="text/babel" src="dataLoader.js"></script>
-    <script type="text/babel" src="WorldviewDailyQuiz.js"></script>
-    <script type="text/babel" src="AdminInterface.js"></script>
-    <script type="text/babel" src="App.js"></script>
+    <!-- Load the quiz data first -->
+    <script type="text/babel" src="quizData.js"></script>
     
-    <!-- Initialize the app -->
-    <script type="text/babel">
-        ReactDOM.render(<App />, document.getElementById('root'));
-    </script>
-</body>
-</html>://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    
-    <!-- Babel for JSX transformation -->
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-</head>
-<body class="bg-gray-100 min-h-screen py-8">
-    <div id="root"></div>
-    
-    <!-- Import our application scripts as modules -->
-    <script type="text/babel" data-type="module">
-        // Import components
-        import App from './App.js';
-        
-        // Render the application
-        ReactDOM.render(<App />, document.getElementById('root'));
-    </script>
+    <!-- Load the app after quiz data -->
+    <script type="text/babel" src="app.js"></script>
 </body>
 </html>
-    
