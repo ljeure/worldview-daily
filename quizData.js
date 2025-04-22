@@ -32,7 +32,7 @@ const quizData = {
   },
   
   // Day 2 (Tuesday): Life Expectancy (your existing implementation's data)
-  3: {
+  2: {
     title: "Global CO₂ Emissions per Capita",
     description: "Test your knowledge about CO₂ emissions per capita worldwide. As a reference, the global CO₂ emissions per capita in 2023 are approximately 4.7 metric tons.",
     sliderMin: 0,
