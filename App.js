@@ -13,7 +13,7 @@ const getDayOfWeek = () => {
 // Main app component that loads the quiz for the current day
 const WorldviewDaily = () => {
   const [currentDay, setCurrentDay] = React.useState(null);
-  const [quizLoaded, setQuizLoaded] = React.useState(false);
+  const [quizLoaded, setQuizLoaded] = React.useState(false);ƒyear
 
   React.useEffect(() => {
     // Get the day of the week (or use override for testing)
@@ -222,7 +222,7 @@ console.log(`Day ${dayNumber}`);
         
         {/* Historical Year Section */}
         <div className="mb-10">
-          <h2 className="text-xl font-semibold mb-4">{quizData.title} {historicalYear} Years Ago ({historicalYear}, tonnes)</h2>
+          <h2 className="text-xl font-semibold mb-4">Historical {quizData.title} ({historicalYear}, tonnes)</h2>
           
           <div className="space-y-6">
             {regions.map(region => (
