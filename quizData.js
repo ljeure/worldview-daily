@@ -32,7 +32,7 @@ const quizData = {
   },
   
   // Day 2 (Tuesday): Life Expectancy (your existing implementation's data)
-  2: {
+  3: {
     title: "Global CO₂ Emissions per Capita",
     description: "Test your knowledge about CO₂ emissions per capita worldwide. As a reference, the global CO₂ emissions per capita in 2023 are approximately 4.7 metric tons.",
     sliderMin: 0,
@@ -59,7 +59,7 @@ const quizData = {
   },
   
   // Day 3 (Wednesday): Template with placeholder data
-  3: {
+  7: {
     title: "Internet Access",
     description: "Test your knowledge of global internet access.",
     sliderMin: 40,
