@@ -162,7 +162,7 @@ const DailyQuiz = ({ quizData, day }) => {
         <h1 className="text-3xl font-bold mb-2">Worldview Daily</h1>
         <p className="text-gray-600">{quizData.description}</p>
         <div className="mt-2 inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
-          Day {day}: {quizData.title}
+          Day 3: {quizData.title}
         </div>
       </div>
       
