@@ -54,7 +54,7 @@ const WorldviewDaily = () => {
 // Component for the daily quiz using the slider format
 const DailyQuiz = ({ quizData, day }) => {
   // Configuration from quiz data
-  const sliderMin = quizData.sliderMin || 40;
+  const sliderMin = quizData.sliderMin || 0;
   const sliderMax = quizData.sliderMax || 90;
   const sliderStep = quizData.sliderStep || 0.1;
   const regions = quizData.regions || [];
