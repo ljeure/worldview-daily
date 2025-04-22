@@ -155,6 +155,22 @@ const DailyQuiz = ({ quizData, day }) => {
   const formatNumber = (num) => {
     return num.toFixed(1);
   };
+
+// Define the start date (April 20, 2025)
+const startDate = new Date('2025-04-20');
+
+// Get the current date
+const currentDate = new Date();
+
+// Calculate the difference in milliseconds
+const timeDifference = currentDate - startDate;
+
+// Convert milliseconds to days and add 1 to start counting from Day 1
+const dayNumber = Math.floor(timeDifference / (1000 * 60 * 60 * 24)) + 1;
+
+// Output the current day number
+console.log(`Day ${dayNumber}`);
+  
   
   return (
     <div className="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg">
@@ -162,14 +178,14 @@ const DailyQuiz = ({ quizData, day }) => {
         <h1 className="text-3xl font-bold mb-2">Worldview Daily</h1>
         <p className="text-gray-600">{quizData.description}</p>
         <div className="mt-2 inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
-          Day 3: {quizData.title}
+          Day {dayNumber}: {quizData.title}
         </div>
       </div>
       
       <div>
         {/* Current Year Section */}
         <div className="mb-10">
-          <h2 className="text-xl font-semibold mb-4">Current {quizData.title} ({currentYear}, years)</h2>
+          <h2 className="text-xl font-semibold mb-4">Current {quizData.title} ({currentYear}, tonnes)</h2>
           
           <div className="space-y-6">
             {regions.map(region => (
@@ -187,14 +203,14 @@ const DailyQuiz = ({ quizData, day }) => {
                   disabled={submitted}
                 />
                 <div className="flex justify-between text-sm">
-                  <span>{sliderMin} years</span>
-                  <span className="font-medium">Your guess: {formatNumber(guesses[`current${region.replace(/\s+/g, '')}`])} years</span>
-                  <span>{sliderMax} years</span>
+                  <span>{sliderMin} tonnes</span>
+                  <span className="font-medium">Your guess: {formatNumber(guesses[`current${region.replace(/\s+/g, '')}`])} tonnes</span>
+                  <span>{sliderMax} tonnes</span>
                 </div>
                 {submitted && (
                   <div className="mt-2">
                     <span className="font-medium text-blue-600">
-                      Actual: {formatNumber(quizData.currentAnswers[region])} years
+                      Actual: {formatNumber(quizData.currentAnswers[region])} tonnes
                     </span>
                     <span className="ml-2 px-2 py-1 text-xs rounded-full bg-gray-100">
                       {calculateScore(guesses[`current${region.replace(/\s+/g, '')}`], quizData.currentAnswers[region])}/10 points
@@ -208,7 +224,7 @@ const DailyQuiz = ({ quizData, day }) => {
         
         {/* Historical Year Section */}
         <div className="mb-10">
-          <h2 className="text-xl font-semibold mb-4">{quizData.title} {historicalYear} Years Ago ({historicalYear}, years)</h2>
+          <h2 className="text-xl font-semibold mb-4">{quizData.title} {historicalYear} Years Ago ({historicalYear}, tonnes)</h2>
           
           <div className="space-y-6">
             {regions.map(region => (
