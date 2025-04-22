@@ -61,13 +61,11 @@ const DailyQuiz = ({ quizData, day }) => {
   const currentYear = quizData.currentYear || new Date().getFullYear();
   const historicalYear = quizData.historicalYear || (currentYear - 20);
   
-  // Initialize guesses for all regions
+  // Initialize guesses for all regions to be the middle of the slider range
   const initialGuesses = {};
   regions.forEach(region => {
-    // Current year guesses - initialize at 75% of slider range
-    initialGuesses[`current${region.replace(/\s+/g, '')}`] = 75;
-    // Historical year guesses - initialize at 70% of slider range
-    initialGuesses[`historical${region.replace(/\s+/g, '')}`] = 70;
+    initialGuesses[`current${region.replace(/\s+/g, '')}`] = .5 * (sliderMax - sliderMin) + sliderMin;
+    initialGuesses[`historical${region.replace(/\s+/g, '')}`] = .5 * (sliderMax - sliderMin) + sliderMin;
   });
   
   // User's guesses
