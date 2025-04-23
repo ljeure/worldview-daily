@@ -57,6 +57,38 @@ const quizData = {
     },
     additionalContent: { title: "Understanding CO₂ Emissions Trends", text: "Between 2000 and 2023, the United States reduced its per capita CO₂ emissions from 21.4 to 14.3 metric tons. This decline is attributed to a shift from coal to natural gas and renewables, improved energy efficiency, and changes in industrial activities. Conversely, China's per capita emissions rose from 2.9 to 8.4 metric tons, driven by rapid industrialization, urbanization, and increased coal consumption. Europe's moderate decrease from 8.4 to 6.7 metric tons reflects energy efficiency improvements, a transition to cleaner energy sources, and environmental policies. The global average increased modestly from 4.1 to 4.7 metric tons, highlighting the varying emission trends across regions." }
   },
+
+// day 4 - literacy
+4: {
+  title: "Global Literacy Rates",
+  description: "Test your knowledge about literacy rates worldwide.",
+  sliderMin: 0,
+  sliderMax: 100,
+  sliderStep: 0.1,
+  currentYear: 2020,
+  historicalYear: 2000,
+  regions: ["World", "Sub-Saharan Africa", "China", "Europe and Central Asia", "Mexico"],
+  currentAnswers: {
+    "World": 87,
+    "Sub-Saharan Africa": 68,
+    "China": 97,
+    "Europe and Central Asia": 99,
+    "Mexico": 95
+  },
+  historicalAnswers: {
+    "World": 81,
+    "Sub-Saharan Africa": 57,
+    "China": 91,
+    "Europe and Central Asia": 97,
+    "Mexico": 91
+  },
+  additionalContent: {
+    title: "Understanding Changes in Literacy Rates",
+    text: "Between 2000 and 2020, global literacy rates improved from 81% to 87%, reflecting steady progress in education access and quality. Sub-Saharan Africa saw a notable increase from 57% to 68%, driven by expanded primary education and international development efforts. China's literacy rate rose from 91% to 97%, continuing its long-term investment in universal education. Mexico improved from 91% to 95%, while Europe and Central Asia, already high in 2000 at 97%, reached near-universal literacy at 99%."
+  }
+}
+
+
   
   // Day 3 (Wednesday): Template with placeholder data
   7: {
