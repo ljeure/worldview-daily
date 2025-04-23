@@ -1,4 +1,3 @@
-// quizData.js - Contains data for 7 days of quizzes
 const quizData = {
   // Day 1 (Monday): Uses same format as Life Expectancy quiz, with placeholder data
   1: {
@@ -98,7 +97,7 @@ const quizData = {
   sliderStep: 0.1,
   currentYear: 2020,
   historicalYear: 2000,
-  units: "percent"
+  units: "percent",
   regions: ["World", "Sub-Saharan Africa", "China", "Europe and Central Asia", "Mexico"],
   currentAnswers: {
     "World": 87,
