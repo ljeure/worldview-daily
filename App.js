@@ -240,14 +240,14 @@ console.log(`Day ${dayNumber}`);
                   disabled={submitted}
                 />
                 <div className="flex justify-between text-sm">
-                  <span>{sliderMin} years</span>
-                  <span className="font-medium">Your guess: {formatNumber(guesses[`historical${region.replace(/\s+/g, '')}`])} years</span>
-                  <span>{sliderMax} years</span>
+                  <span>{sliderMin} {quizData.units}</span>
+                  <span className="font-medium">Your guess: {formatNumber(guesses[`historical${region.replace(/\s+/g, '')}`])} {quizData.units}</span>
+                  <span>{sliderMax} {quizData.units}</span>
                 </div>
                 {submitted && (
                   <div className="mt-2">
                     <span className="font-medium text-blue-600">
-                      Actual: {formatNumber(quizData.historicalAnswers[region])} years
+                      Actual: {formatNumber(quizData.historicalAnswers[region])} {quizData.units}
                     </span>
                     <span className="ml-2 px-2 py-1 text-xs rounded-full bg-gray-100">
                       {calculateScore(guesses[`historical${region.replace(/\s+/g, '')}`], quizData.historicalAnswers[region])}/10 points
