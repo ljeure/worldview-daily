@@ -13,7 +13,7 @@ const getDayOfWeek = () => {
 // Main app component that loads the quiz for the current day
 const WorldviewDaily = () => {
   const [currentDay, setCurrentDay] = React.useState(null);
-  const [quizLoaded, setQuizLoaded] = React.useState(false);ƒyear
+  const [quizLoaded, setQuizLoaded] = React.useState(false);
 
   React.useEffect(() => {
     // Get the day of the week (or use override for testing)
