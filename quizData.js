@@ -67,7 +67,7 @@ const quizData = {
   sliderStep: 0.1,
   currentYear: 2020,
   historicalYear: 2000,
-  units: "percent"
+  units: "percent",
   regions: ["World", "Sub-Saharan Africa", "China", "Europe and Central Asia", "Mexico"],
   currentAnswers: {
     "World": 87,
