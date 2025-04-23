@@ -86,7 +86,7 @@ const quizData = {
     title: "Understanding Changes in Literacy Rates",
     text: "Between 2000 and 2020, global literacy rates improved from 81% to 87%, reflecting steady progress in education access and quality. Sub-Saharan Africa saw a notable increase from 57% to 68%, driven by expanded primary education and international development efforts. China's literacy rate rose from 91% to 97%, continuing its long-term investment in universal education. Mexico improved from 91% to 95%, while Europe and Central Asia, already high in 2000 at 97%, reached near-universal literacy at 99%."
   }
-}
+},
 
 // day 4 wednesday - literacy
 4: {
