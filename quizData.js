@@ -89,6 +89,36 @@ const quizData = {
   }
 }
 
+// day 4 wednesday - literacy
+4: {
+  title: "Global Literacy Rates",
+  description: "Test your knowledge about literacy rates worldwide.",
+  sliderMin: 0,
+  sliderMax: 100,
+  sliderStep: 0.1,
+  currentYear: 2020,
+  historicalYear: 2000,
+  units: "percent"
+  regions: ["World", "Sub-Saharan Africa", "China", "Europe and Central Asia", "Mexico"],
+  currentAnswers: {
+    "World": 87,
+    "Sub-Saharan Africa": 68,
+    "China": 97,
+    "Europe and Central Asia": 99,
+    "Mexico": 95
+  },
+  historicalAnswers: {
+    "World": 81,
+    "Sub-Saharan Africa": 57,
+    "China": 91,
+    "Europe and Central Asia": 97,
+    "Mexico": 91
+  },
+  additionalContent: {
+    title: "Understanding Changes in Literacy Rates",
+    text: "Between 2000 and 2020, global literacy rates improved from 81% to 87%, reflecting steady progress in education access and quality. Sub-Saharan Africa saw a notable increase from 57% to 68%, driven by expanded primary education and international development efforts. China's literacy rate rose from 91% to 97%, continuing its long-term investment in universal education. Mexico improved from 91% to 95%, while Europe and Central Asia, already high in 2000 at 97%, reached near-universal literacy at 99%."
+  }
+
 
 };
 
