@@ -13,7 +13,7 @@ const getDayOfWeek = () => {
 // Main app component that loads the quiz for the current day
 const WorldviewDaily = () => {
   const [currentDay, setCurrentDay] = React.useState(null);
-  const [quizLoaded, setQuizLoaded] = React.useState(false);
+  const [quizLoaded, setQuizLoaded] = React.useState(false);ƒyear
 
   React.useEffect(() => {
     // Get the day of the week (or use override for testing)
@@ -183,7 +183,7 @@ console.log(`Day ${dayNumber}`);
       <div>
         {/* Current Year Section */}
         <div className="mb-10">
-          <h2 className="text-xl font-semibold mb-4">Current {quizData.title} ({currentYear}, tonnes)</h2>
+          <h2 className="text-xl font-semibold mb-4">Current {quizData.title} ({currentYear}, {{units}})</h2>
           
           <div className="space-y-6">
             {regions.map(region => (
@@ -201,14 +201,14 @@ console.log(`Day ${dayNumber}`);
                   disabled={submitted}
                 />
                 <div className="flex justify-between text-sm">
-                  <span>{sliderMin} tonnes</span>
-                  <span className="font-medium">Your guess: {formatNumber(guesses[`current${region.replace(/\s+/g, '')}`])} tonnes</span>
-                  <span>{sliderMax} tonnes</span>
+                  <span>{sliderMin} {{units}}</span>
+                  <span className="font-medium">Your guess: {formatNumber(guesses[`current${region.replace(/\s+/g, '')}`])} {{units}}</span>
+                  <span>{sliderMax} {{units}}</span>
                 </div>
                 {submitted && (
                   <div className="mt-2">
                     <span className="font-medium text-blue-600">
-                      Actual: {formatNumber(quizData.currentAnswers[region])} tonnes
+                      Actual: {formatNumber(quizData.currentAnswers[region])} {{units}}
                     </span>
                     <span className="ml-2 px-2 py-1 text-xs rounded-full bg-gray-100">
                       {calculateScore(guesses[`current${region.replace(/\s+/g, '')}`], quizData.currentAnswers[region])}/10 points
@@ -222,7 +222,7 @@ console.log(`Day ${dayNumber}`);
         
         {/* Historical Year Section */}
         <div className="mb-10">
-          <h2 className="text-xl font-semibold mb-4">{quizData.title} {historicalYear} Years Ago ({historicalYear}, tonnes)</h2>
+          <h2 className="text-xl font-semibold mb-4">Historical {quizData.title} ({historicalYear}, {{units}})</h2>
           
           <div className="space-y-6">
             {regions.map(region => (
