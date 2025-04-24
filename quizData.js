@@ -59,7 +59,7 @@ const quizData = {
   additionalContent: {
     title: "Understanding the Decline in Child Mortality",
     text: "The dramatic drop in child mortality since 1950 is one of the most important global health achievements of the past century. Advances in vaccination, oral rehydration therapy, antibiotics, maternal education, and access to skilled birth attendants have saved millions of young lives. International efforts like expanded immunization programs, improved nutrition, and better water and sanitation infrastructure have played key roles, especially in lower-income regions. While progress has been uneven, every region in the world has seen gains thanks to targeted, scalable interventions in public health.",
-    source: "https://ourworldindata.org/child-mortality-big-problem-in-brief"
+    source: "Source: https://ourworldindata.org/child-mortality-big-problem-in-brief"
   }
 }
 
