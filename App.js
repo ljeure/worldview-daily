@@ -18,7 +18,7 @@ const WorldviewDaily = () => {
   React.useEffect(() => {
     // Get the day of the week (or use override for testing)
     // Uncomment the next line and set a number 1-7 to test a specific day
-    const dayNumber = 4; // Test day 2 (Life Expectancy)
+    const dayNumber = 5; // Test day 2 (Life Expectancy)
     // const dayNumber = getDayOfWeek();
     setCurrentDay(dayNumber);
     setQuizLoaded(true);
@@ -174,6 +174,7 @@ console.log(`Day ${dayNumber}`);
     <div className="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg">
       <div className="text-center mb-6">
         <h1 className="text-3xl font-bold mb-2">Worldview Daily</h1>
+        <p className="text-gray-600">{quizData.tagline}</p>
         <p className="text-gray-600">{quizData.description}</p>
         <div className="mt-2 inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
           Day {dayNumber}: {quizData.title}
@@ -282,6 +283,7 @@ console.log(`Day ${dayNumber}`);
               <h3 className="font-bold text-lg mb-2">{quizData.additionalContent.title}</h3>
               <p className="mb-2">
                 {quizData.additionalContent.text}
+                {quizData.additionalContent.source}
               </p>
             </div>
             <div className="mt-4 text-sm text-gray-600 text-left">
