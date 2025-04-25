@@ -61,7 +61,40 @@ const quizData = {
     text: "The dramatic drop in child mortality since 1950 is one of the most important global health achievements of the past century. Advances in vaccination, oral rehydration therapy, antibiotics, maternal education, and access to skilled birth attendants have saved millions of young lives. International efforts like expanded immunization programs, improved nutrition, and better water and sanitation infrastructure have played key roles, especially in lower-income regions. While progress has been uneven, every region in the world has seen gains thanks to targeted, scalable interventions in public health.",
     source: "Source: https://ourworldindata.org/child-mortality-big-problem-in-brief"
   }
+},
+
+6: {
+  title: "Global Internet Access",
+  tagline: "Sharpen your sense of the historical and current state of the world.",
+  description: "What percent of people use the internet, now vs in 2000? For reference, the global average in 2022 was 64%.",
+  units: "percent",
+  sliderMin: 0,
+  sliderMax: 100,
+  sliderStep: 1,
+  currentYear: 2022,
+  historicalYear: 2000,
+  regions: ["World", "China", "United States", "Latin America and Caribbean", "Sub-Saharan Africa"],
+  currentAnswers: {
+    "World": 64.4,
+    "China": 75.6,
+    "United States": 97.1,
+    "Latin America and Caribbean": 77.6,
+    "Sub-Saharan Africa": 33.6
+  },
+  historicalAnswers: {
+    "World": 6.7,
+    "China": 1.8,
+    "United States": 43.1,
+    "Latin America and Caribbean": 3.9,
+    "Sub-Saharan Africa": 0.5
+  },
+  additionalContent: {
+    title: "Understanding the Rise of Internet Access",
+    text: "In just over two decades, global internet access expanded nearly tenfold, transforming how people work, learn, and communicate. This growth was driven by mobile technology, declining device and data costs, and massive investment in digital infrastructure. China’s internet boom was fueled by government-backed expansion and smartphone adoption. Sub-Saharan Africa, while still lagging, made enormous strides via mobile-first access. Latin America and the Caribbean saw rapid uptake as mobile networks expanded beyond cities. Meanwhile, the U.S. reached near-universal connectivity through broadband and mobile saturation.",
+    source: "Source: https://ourworldindata.org/grapher/share-of-individuals-using-the-internet"
+  }
 }
+
 
 
 };
