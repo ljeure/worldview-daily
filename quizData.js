@@ -93,9 +93,40 @@ const quizData = {
     text: "In just over two decades, global internet access expanded nearly tenfold, transforming how people work, learn, and communicate. This growth was driven by mobile technology, declining device and data costs, and massive investment in digital infrastructure. China’s internet boom was fueled by government-backed expansion and smartphone adoption. Sub-Saharan Africa, while still lagging, made enormous strides via mobile-first access. Latin America and the Caribbean saw rapid uptake as mobile networks expanded beyond cities. Meanwhile, the U.S. reached near-universal connectivity through broadband and mobile saturation.",
     source: "Source: https://ourworldindata.org/grapher/share-of-individuals-using-the-internet"
   }
+},
+
+7: {
+  title: "Importance of Religion",
+  tagline: "Sharpen your sense of the of the world.",
+  description: "What percent of people say religion is very important or rather important in their lives, now vs in 2004?",
+  units: "percent",
+  sliderMin: 0,
+  sliderMax: 100,
+  sliderStep: 1,
+  currentYear: 2022,
+  historicalYear: 2004,
+  regions: ["China", "United States", "Indonesia", "Bangladesh", "Mexico"],
+  currentAnswers: {
+    "China": 13,
+    "United States": 61,
+    "Indonesia": 100,
+    "Bangladesh": 99,
+    "Mexico": 75
+  },
+  historicalAnswers: {
+    "China": 9,
+    "United States": 82,
+    "Indonesia": 100,
+    "Bangladesh": 98,
+    "Mexico": 88
+  },
+  additionalContent: {
+    title: "Understanding Trends in Religious Importance",
+    text: "Views on religion have remained deeply rooted in some regions and shifted in others. In countries like Bangladesh and Indonesia, religion has stayed central to life for nearly the entire population. In contrast, Mexico and the United States have seen notable declines over time, reflecting broader trends of secularization, especially among younger generations. China, already one of the least religious societies in 2004, has remained low, shaped by cultural, political, and historical factors that have long suppressed organized religion.",
+    source: "Source: https://ourworldindata.org/grapher/how-important-religion-is-in-your-life?tab=table&time=2004&showSelectionOnlyInTable=1&country=MEX~CHN~USA~"
+
+  }
 }
-
-
 
 };
 
