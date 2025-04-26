@@ -1,25 +1,23 @@
 // app.js - Main application logic for Worldview Daily Quiz
 
-// Determine which day's quiz to show
-const getDayOfWeek = () => {
-  // Get current date
-  const now = new Date();
-  // Get day of week (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
-  const dayOfWeek = now.getDay();
-  // Map Sunday (0) to day 7, otherwise use the day number
-  return dayOfWeek === 0 ? 7 : dayOfWeek;
-};
-
 // Main app component that loads the quiz for the current day
 const WorldviewDaily = () => {
   const [currentDay, setCurrentDay] = React.useState(null);
   const [quizLoaded, setQuizLoaded] = React.useState(false);
 
   React.useEffect(() => {
-    // Get the day of the week (or use override for testing)
-    // Uncomment the next line and set a number 1-7 to test a specific day
-    const dayNumber = 6; // manually set day number
-    // const dayNumber = getDayOfWeek();
+    // Calculate the day number based on the start date (April 20, 2025)
+    const startDate = new Date(Date.UTC(2025, 3, 20)); // Use UTC for start date
+    const currentDate = new Date(); // Current date in local time
+    const utcCurrentDate = new Date(Date.UTC(
+      currentDate.getUTCFullYear(),
+      currentDate.getUTCMonth(),
+      currentDate.getUTCDate()
+    )); // Convert current date to UTC
+  
+    const timeDifference = utcCurrentDate - startDate; // Difference in milliseconds
+    const dayNumber = Math.floor(timeDifference / (1000 * 60 * 60 * 24)) + 1;
+  
     setCurrentDay(dayNumber);
     setQuizLoaded(true);
   }, []);
@@ -38,9 +36,9 @@ const WorldviewDaily = () => {
     return (
       <div className="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg text-center">
         <h1 className="text-3xl font-bold mb-2">Worldview Daily</h1>
-        <p className="text-red-500">Error: Could not load quiz data for day {currentDay}.</p>
+        <p className="text-red-500">Apologies! Seems that no quiz data has been added for day {currentDay}. Your options are: 1. Badger Luke to get him to fix this, OR 2. Suffer in silence.</p>
       </div>
-    );
+    )
   }
 
   // Load the appropriate quiz data for today
@@ -55,8 +53,8 @@ const WorldviewDaily = () => {
 const DailyQuiz = ({ quizData, day }) => {
   // Configuration from quiz data
   const sliderMin = quizData.sliderMin || 0;
-  const sliderMax = quizData.sliderMax || 90;
-  const sliderStep = quizData.sliderStep || 0.1;
+  const sliderMax = quizData.sliderMax || 100;
+  const sliderStep = quizData.sliderStep || 1;
   const regions = quizData.regions || [];
   const currentYear = quizData.currentYear || new Date().getFullYear();
   const historicalYear = quizData.historicalYear || (currentYear - 20);
@@ -78,14 +76,12 @@ const DailyQuiz = ({ quizData, day }) => {
   
   // Calculate scores
   const calculateScore = (guess, actual) => {
-    const percentDiff = Math.abs((guess - actual) / actual) * 100;
-    
-    if (percentDiff <= 3) return 10;   // Within 3%
-    if (percentDiff <= 6) return 8;    // Within 6%
-    if (percentDiff <= 9) return 6;    // Within 9%
-    if (percentDiff <= 12) return 4;   // Within 12%
-    if (percentDiff <= 15) return 2;   // Within 15%
-    return 0;                          // More than 15% off
+    const absDiff = Math.abs(guess - actual); // Absolute difference between guess and actual
+    const range = sliderMax - sliderMin; // Total range of the slider
+    const percentDiff = (absDiff / range) * 100; // Deviation as a percentage of the range
+  
+    if (percentDiff <= 2) return 10; // Full points for guesses within ±2% of the range  
+    return Math.max(10 - percentDiff, 0); // Otherwise, score decreases linearly to 0 as long as you are within 10%
   };
   
   // Calculate total score (out of 100)
@@ -283,12 +279,13 @@ console.log(`Day ${dayNumber}`);
               <h3 className="font-bold text-lg mb-2">{quizData.additionalContent.title}</h3>
               <p className="mb-2">
                 {quizData.additionalContent.text}
-                {quizData.additionalContent.source}
+                {quizData.additionalContent?.source && (
+                  <p className="text-sm text-gray-500 mt-4">
+                    Data source: <a href={quizData.additionalContent.source} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">Our World in Data</a>
+                    </p>
+                  )}
+                  <p><br></br>Come back tomorrow for a new quiz!</p>
               </p>
-            </div>
-            <div className="mt-4 text-sm text-gray-600 text-left">
-              <p>Data source: {quizData.title} dataset ({historicalYear}-{currentYear})</p>
-              <p>Come back tomorrow for a new quiz!</p>
             </div>
           </div>
         ) : (
