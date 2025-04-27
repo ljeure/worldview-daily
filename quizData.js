@@ -131,7 +131,7 @@ const quizData = {
 8: {
   title: "Average Weekly Working Hours",
   tagline: "Sharpen your sense of the historical and current state of the world.",
-  description: "How many hours per week did people work on average, now vs. in 1970? For reference, the U.S. average in 2017 was 34 hours/week.",
+  description: "How many hours per week did people work on average, now vs. in 1970?",
   units: "hours/week",
   sliderMin: 20,
   sliderMax: 50,
