@@ -126,9 +126,46 @@ const quizData = {
     source: "Source: https://ourworldindata.org/grapher/how-important-religion-is-in-your-life?tab=table&time=2004&showSelectionOnlyInTable=1&country=MEX~CHN~USA~"
 
   }
+},
+
+8: {
+  title: "Average Weekly Working Hours",
+  tagline: "Sharpen your sense of the historical and current state of the world.",
+  description: "How many hours per week did people work on average, now vs. in 1970? For reference, the U.S. average in 2017 was 34 hours/week.",
+  units: "hours/week",
+  sliderMin: 20,
+  sliderMax: 50,
+  sliderStep: 1,
+  currentYear: 2017,
+  historicalYear: 1970,
+  regions: ["China", "India", "United States", "Brazil", "Germany"],
+  currentAnswers: {
+    "China": 42,
+    "India": 41,
+    "United States": 34,
+    "Brazil": 33,
+    "Germany": 26
+  },
+  historicalAnswers: {
+    "China": 38,
+    "India": 40,
+    "United States": 36,
+    "Brazil": 41,
+    "Germany": 38
+  },
+  additionalContent: {
+    title: "Understanding Changes in Working Hours",
+    text: "Working hours have shifted significantly over the past decades, influenced by economic development, labor policies, and cultural factors. Germany experienced a substantial decrease in weekly working hours, dropping from 38 hours in 1970 to 26 hours in 2017, reflecting strong labor protections, a focus on work-life balance, and increased productivity. Brazil also saw a notable reduction, from 41 to 33 hours/week, due to labor reforms and economic changes. In contrast, China's average weekly working hours increased from 38 to 42, driven by rapid industrialization and economic growth. India's working hours saw a slight increase, from 40 to 41, indicating steady economic activity. The United States experienced a modest decline, from 36 to 34 hours/week, influenced by shifts in labor markets and productivity gains.",
+    source: "Source: https://ourworldindata.org/grapher/annual-working-hours-per-worker"
+  }
 }
+
 
 };
 
 // Make the quiz data globally available
 window.quizData = quizData;
+
+
+// additional questions to add
+// hours weekly 1950 vs now
