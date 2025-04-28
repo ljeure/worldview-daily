@@ -190,7 +190,7 @@ const quizData = {
     text: "Global access to higher education has expanded dramatically since 1980. China has undergone the most staggering transformation, driven by massive investment in education infrastructure and national policies prioritizing human capital development. India has seen steady but slower growth, reflecting both progress and persistent challenges in access. The United States and European Union already had relatively high enrollment rates, but both have still improved further. Latin America has made major strides, fueled by economic growth and expanded access to secondary education.",
     source: "Source: https://ourworldindata.org/grapher/primary-secondary-enrollment-completion-rates?tab=table&country=~USA"
   }
-}
+},
 
 10: {
   title: "Access to Clean Drinking Water",
