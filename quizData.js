@@ -158,7 +158,72 @@ const quizData = {
     text: "Working hours have shifted significantly over the past decades, influenced by economic development, labor policies, and cultural factors. Germany experienced a substantial decrease in weekly working hours, dropping from 38 hours in 1970 to 26 hours in 2017, reflecting strong labor protections, a focus on work-life balance, and increased productivity. Brazil also saw a notable reduction, from 41 to 33 hours/week, due to labor reforms and economic changes. In contrast, China's average weekly working hours increased from 38 to 42, driven by rapid industrialization and economic growth. India's working hours saw a slight increase, from 40 to 41, indicating steady economic activity. The United States experienced a modest decline, from 36 to 34 hours/week, influenced by shifts in labor markets and productivity gains.",
     source: "Source: https://ourworldindata.org/grapher/annual-working-hours-per-worker"
   }
+},
+
+9: {
+  title: "College Enrollment Rates",
+  tagline: "Sharpen your sense of the historical and current state of the world.",
+  description: "What percent of young people are enrolled in post-secondary education now vs in 1980?",
+  units: "percent",
+  sliderMin: 0,
+  sliderMax: 100,
+  sliderStep: 1,
+  currentYear: 2022,
+  historicalYear: 1980,
+  regions: ["China", "India", "United States", "European Union", "Latin America and Caribbean"],
+  currentAnswers: {
+    "China": 72,
+    "India": 33,
+    "United States": 79,
+    "European Union": 77,
+    "Latin America and Caribbean": 56
+  },
+  historicalAnswers: {
+    "China": 1,
+    "India": 5,
+    "United States": 55,
+    "European Union": 24,
+    "Latin America and Caribbean": 13
+  },
+  additionalContent: {
+    title: "Understanding Changes in College Enrollment",
+    text: "Global access to higher education has expanded dramatically since 1980. China has undergone the most staggering transformation, driven by massive investment in education infrastructure and national policies prioritizing human capital development. India has seen steady but slower growth, reflecting both progress and persistent challenges in access. The United States and European Union already had relatively high enrollment rates, but both have still improved further. Latin America has made major strides, fueled by economic growth and expanded access to secondary education.",
+    source: "Source: https://ourworldindata.org/grapher/primary-secondary-enrollment-completion-rates?tab=table&country=~USA"
+  }
 }
+
+10: {
+  title: "Access to Clean Drinking Water",
+  tagline: "Sharpen your sense of the historical and current state of the world.",
+  description: "What percent of people had access to clean drinking water in 2022 vs in 2000? For reference, global access has steadily improved, but large gaps remain.",
+  units: "percent",
+  sliderMin: 0,
+  sliderMax: 100,
+  sliderStep: 1,
+  currentYear: 2022,
+  historicalYear: 2000,
+  regions: ["World", "Sub-Saharan Africa", "Latin America and Caribbean", "Europe", "Pakistan"],
+  currentAnswers: {
+    "World": 73,
+    "Sub-Saharan Africa": 31,
+    "Latin America and Caribbean": 75,
+    "Europe": 92,
+    "Pakistan": 51
+  },
+  historicalAnswers: {
+    "World": 61,
+    "Sub-Saharan Africa": 17,
+    "Latin America and Caribbean": 71,
+    "Europe": 86,
+    "Pakistan": 35
+  },
+  additionalContent: {
+    title: "Understanding Changes in Access to Drinking Water",
+    text: "Global access to clean drinking water has improved significantly since 2000. Major efforts in infrastructure investment, sanitation programs, and health education campaigns have driven gains in regions like Latin America and South Asia. Sub-Saharan Africa has made progress, but access remains limited in many rural areas. Developed regions like Europe have seen marginal improvements from already high levels. Continued progress will require expanded investment and focus on rural and underserved communities.",
+    source: "Source: https://ourworldindata.org/clean-water-sanitation"
+  }
+}
+
 
 
 };
