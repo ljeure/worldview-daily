@@ -222,7 +222,41 @@ const quizData = {
     text: "Global access to clean drinking water has improved significantly since 2000. Major efforts in infrastructure investment, sanitation programs, and health education campaigns have driven gains in regions like Latin America and South Asia. Sub-Saharan Africa has made progress, but access remains limited in many rural areas. Developed regions like Europe have seen marginal improvements from already high levels. Continued progress will require expanded investment and focus on rural and underserved communities.",
     source: "Source: https://ourworldindata.org/clean-water-sanitation"
   }
+},
+
+11: {
+  title: "Life Expectancy",
+  tagline: "Sharpen your sense of the historical and current state of the world.",
+  description: "How long do people live on average, now vs in 2003?",
+  units: "years",
+  sliderMin: 40,
+  sliderMax: 90,
+  sliderStep: 0.1,
+  currentYear: 2023,
+  historicalYear: 2003,
+  regions: ["China", "India", "United States", "World", "Africa", "Europe"],
+  currentAnswers: {
+    "World": 73.2,
+    "Africa": 63.8,
+    "China": 78.0,
+    "Europe": 79.1,
+    "United States": 79.3
+  },
+  historicalAnswers: {
+    "World": 67.4,
+    "Africa": 54.8,
+    "China": 73.4,
+    "Europe": 73.7,
+    "United States": 77.1
+
+  },
+  additionalContent: {
+    title: "Understanding Life Expectancy Changes",
+    text: "Life expectancy has risen globally over the past two decades, thanks to reductions in child mortality, better healthcare access, and disease control. Africa made the biggest leap, gaining nearly 9 years, largely due to improved treatment and prevention of HIV/AIDS and malaria. China and Europe also saw solid gains, reflecting sustained investment in public health. In contrast, the United States experienced slower progress due to factors like opioid-related deaths and chronic disease. Still, nearly all regions now enjoy longer lives than they did in 2003.",
+    source: "Source: https://ourworldindata.org/life-expectancy"
+  }
 }
+
 
 
 
