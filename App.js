@@ -81,7 +81,7 @@ const DailyQuiz = ({ quizData, day }) => {
     const percentDiff = (absDiff / range) * 100; // Deviation as a percentage of the range
   
     if (percentDiff <= 2) return 10; // Full points for guesses within ±2% of the range  
-    return Math.max(10 - percentDiff, 0); // Otherwise, score decreases linearly to 0 as long as you are within 10%
+    return Math.max(Math.round(10 - percentDiff), 0); // Otherwise, score decreases linearly to 0 as long as you are within 10%
   };
   
   // Calculate total score (out of 100)
