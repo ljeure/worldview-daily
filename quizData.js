@@ -234,7 +234,7 @@ const quizData = {
   sliderStep: 0.1,
   currentYear: 2023,
   historicalYear: 2003,
-  regions: ["China", "India", "United States", "World", "Africa", "Europe"],
+  regions: ["China", "United States", "World", "Africa", "Europe"],
   currentAnswers: {
     "World": 73.2,
     "Africa": 63.8,
