@@ -255,10 +255,70 @@ const quizData = {
     text: "Life expectancy has risen globally over the past two decades, thanks to reductions in child mortality, better healthcare access, and disease control. Africa made the biggest leap, gaining nearly 9 years, largely due to improved treatment and prevention of HIV/AIDS and malaria. China and Europe also saw solid gains, reflecting sustained investment in public health. In contrast, the United States experienced slower progress due to factors like opioid-related deaths and chronic disease. Still, nearly all regions now enjoy longer lives than they did in 2003.",
     source: "Source: https://ourworldindata.org/life-expectancy"
   }
+},
+
+12: {
+  title: "Global CO₂ Emissions per Capita",
+  description: "Test your knowledge about CO₂ emissions per capita worldwide. As a reference, the global CO₂ emissions per capita in 2023 are approximately 4.7 metric tons.",
+  sliderMin: 0,
+  sliderMax: 42,
+  sliderStep: 0.1,
+  currentYear: 2023,
+  historicalYear: 2000,
+  units: "metric tons",
+  regions: ["World", "Africa", "China", "Europe", "United States"],
+  currentAnswers: {
+    "World": 4.7,
+    "Africa": 1.0,
+    "China": 8.4,
+    "Europe": 6.7,
+    "United States": 14.3
+  },
+  historicalAnswers: {
+    "World": 4.1,
+    "Africa": 1.1,
+    "China": 2.9,
+    "Europe": 8.4,
+    "United States": 21.4
+  },
+  additionalContent: { 
+    title: "Understanding CO₂ Emissions Trends", 
+    text: "Between 2000 and 2023, the United States reduced its per capita CO₂ emissions from 21.4 to 14.3 metric tons. This decline is attributed to a shift from coal to natural gas and renewables, improved energy efficiency, and changes in industrial activities. Conversely, China's per capita emissions rose from 2.9 to 8.4 metric tons, driven by rapid industrialization, urbanization, and increased coal consumption. Europe's moderate decrease from 8.4 to 6.7 metric tons reflects energy efficiency improvements, a transition to cleaner energy sources, and environmental policies. The global average increased modestly from 4.1 to 4.7 metric tons, highlighting the varying emission trends across regions.",
+    source: "Source: https://ourworldindata.org/grapher/co-emissions-per-capita"
+  }
+  },
+
+// day 4 wednesday - literacy
+13: {
+title: "Global Literacy Rates",
+description: "Test your knowledge about literacy rates worldwide.",
+sliderMin: 0,
+sliderMax: 100,
+sliderStep: 0.1,
+currentYear: 2020,
+historicalYear: 2000,
+units: "percent",
+regions: ["World", "Sub-Saharan Africa", "China", "Europe and Central Asia", "Mexico"],
+currentAnswers: {
+  "World": 87,
+  "Sub-Saharan Africa": 68,
+  "China": 97,
+  "Europe and Central Asia": 99,
+  "Mexico": 95
+},
+historicalAnswers: {
+  "World": 81,
+  "Sub-Saharan Africa": 57,
+  "China": 91,
+  "Europe and Central Asia": 97,
+  "Mexico": 91
+},
+additionalContent: {
+  title: "Understanding Changes in Literacy Rates",
+  text: "Between 2000 and 2020, global literacy rates improved from 81% to 87%, reflecting steady progress in education access and quality. Sub-Saharan Africa saw a notable increase from 57% to 68%, driven by expanded primary education and international development efforts. China's literacy rate rose from 91% to 97%, continuing its long-term investment in universal education. Mexico improved from 91% to 95%, while Europe and Central Asia, already high in 2000 at 97%, reached near-universal literacy at 99%.",
+  source: "Source: https://ourworldindata.org/literacy"
 }
-
-
-
+}
 
 };
 
