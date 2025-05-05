@@ -1,6 +1,7 @@
 const quizData = {
 
 // day 3 wednesday - literacy
+// day 3 wednesday - literacy
 16: {
   title: "Global Literacy Rates",
   description: "Test your knowledge about literacy rates worldwide.",
@@ -31,7 +32,7 @@ const quizData = {
   }
 },
 
-5: {
+17: {
   title: "Global Child Mortality",
   tagline: "Sharpen your sense of the historical and current state of the world.",
   description: "What percent of children died under the age of 5, now vs in 1950? For reference, the global average in 1950 was 23%.",
@@ -63,7 +64,7 @@ const quizData = {
   }
 },
 
-6: {
+18: {
   title: "Global Internet Access",
   tagline: "Sharpen your sense of the historical and current state of the world.",
   description: "What percent of people use the internet, now vs in 2000? For reference, the global average in 2022 was 64%.",
@@ -95,7 +96,7 @@ const quizData = {
   }
 },
 
-7: {
+19: {
   title: "Importance of Religion",
   tagline: "Sharpen your sense of the of the world.",
   description: "What percent of people say religion is very important or rather important in their lives, now vs in 2004?",
@@ -124,11 +125,10 @@ const quizData = {
     title: "Understanding Trends in Religious Importance",
     text: "Views on religion have remained deeply rooted in some regions and shifted in others. In countries like Bangladesh and Indonesia, religion has stayed central to life for nearly the entire population. In contrast, Mexico and the United States have seen notable declines over time, reflecting broader trends of secularization, especially among younger generations. China, already one of the least religious societies in 2004, has remained low, shaped by cultural, political, and historical factors that have long suppressed organized religion.",
     source: "Source: https://ourworldindata.org/grapher/how-important-religion-is-in-your-life?tab=table&time=2004&showSelectionOnlyInTable=1&country=MEX~CHN~USA~"
-
   }
 },
 
-8: {
+20: {
   title: "Average Weekly Working Hours",
   tagline: "Sharpen your sense of the historical and current state of the world.",
   description: "How many hours per week did people work on average, now vs. in 1970?",
@@ -160,7 +160,7 @@ const quizData = {
   }
 },
 
-9: {
+21: {
   title: "College Enrollment Rates",
   tagline: "Sharpen your sense of the historical and current state of the world.",
   description: "What percent of young people are enrolled in post-secondary education now vs in 1980?",
@@ -192,7 +192,7 @@ const quizData = {
   }
 },
 
-10: {
+22: {
   title: "Access to Clean Drinking Water",
   tagline: "Sharpen your sense of the historical and current state of the world.",
   description: "What percent of people had access to clean drinking water in 2022 vs in 2000? For reference, global access has steadily improved, but large gaps remain.",
@@ -224,7 +224,7 @@ const quizData = {
   }
 },
 
-11: {
+23: {
   title: "Life Expectancy",
   tagline: "Sharpen your sense of the historical and current state of the world.",
   description: "How long do people live on average, now vs in 2003?",
@@ -248,7 +248,6 @@ const quizData = {
     "China": 73.4,
     "Europe": 73.7,
     "United States": 77.1
-
   },
   additionalContent: {
     title: "Understanding Life Expectancy Changes",
@@ -257,7 +256,7 @@ const quizData = {
   }
 },
 
-12: {
+24: {
   title: "Global CO₂ Emissions per Capita",
   description: "Test your knowledge about CO₂ emissions per capita worldwide. As a reference, the global CO₂ emissions per capita in 2023 are approximately 4.7 metric tons.",
   sliderMin: 0,
@@ -286,10 +285,10 @@ const quizData = {
     text: "Between 2000 and 2023, the United States reduced its per capita CO₂ emissions from 21.4 to 14.3 metric tons. This decline is attributed to a shift from coal to natural gas and renewables, improved energy efficiency, and changes in industrial activities. Conversely, China's per capita emissions rose from 2.9 to 8.4 metric tons, driven by rapid industrialization, urbanization, and increased coal consumption. Europe's moderate decrease from 8.4 to 6.7 metric tons reflects energy efficiency improvements, a transition to cleaner energy sources, and environmental policies. The global average increased modestly from 4.1 to 4.7 metric tons, highlighting the varying emission trends across regions.",
     source: "Source: https://ourworldindata.org/grapher/co-emissions-per-capita"
   }
-  },
+},
 
 // day 4 wednesday - literacy
-13: {
+25: {
 title: "Global Literacy Rates",
 description: "Test your knowledge about literacy rates worldwide.",
 sliderMin: 0,
@@ -320,7 +319,7 @@ additionalContent: {
 }
 },
 
-14: {
+26: {
   title: "Global Child Mortality",
   tagline: "Sharpen your sense of the historical and current state of the world.",
   description: "What percent of children died under the age of 5, now vs in 1950? For reference, the global average in 1950 was 23%.",
@@ -352,7 +351,7 @@ additionalContent: {
   }
 },
 
-15: {
+27: {
   title: "Global Internet Access",
   tagline: "Sharpen your sense of the historical and current state of the world.",
   description: "What percent of people use the internet, now vs in 2000? For reference, the global average in 2022 was 64%.",
@@ -384,7 +383,7 @@ additionalContent: {
   }
 },
 
-17: {
+28: {
   title: "Importance of Religion",
   tagline: "Sharpen your sense of the of the world.",
   description: "What percent of people say religion is very important or rather important in their lives, now vs in 2004?",
@@ -413,9 +412,8 @@ additionalContent: {
     title: "Understanding Trends in Religious Importance",
     text: "Views on religion have remained deeply rooted in some regions and shifted in others. In countries like Bangladesh and Indonesia, religion has stayed central to life for nearly the entire population. In contrast, Mexico and the United States have seen notable declines over time, reflecting broader trends of secularization, especially among younger generations. China, already one of the least religious societies in 2004, has remained low, shaped by cultural, political, and historical factors that have long suppressed organized religion.",
     source: "Source: https://ourworldindata.org/grapher/how-important-religion-is-in-your-life?tab=table&time=2004&showSelectionOnlyInTable=1&country=MEX~CHN~USA~"
-
   }
-},
+}
 
 
 
