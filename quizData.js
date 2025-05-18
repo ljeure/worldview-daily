@@ -2,7 +2,7 @@ const quizData = {
 
 // day 3 wednesday - literacy
 // day 3 wednesday - literacy
-16: {
+29: {
   title: "Global Literacy Rates",
   description: "Test your knowledge about literacy rates worldwide.",
   sliderMin: 0,
@@ -32,7 +32,7 @@ const quizData = {
   }
 },
 
-17: {
+30: {
   title: "Global Child Mortality",
   tagline: "Sharpen your sense of the historical and current state of the world.",
   description: "What percent of children died under the age of 5, now vs in 1950? For reference, the global average in 1950 was 23%.",
@@ -64,7 +64,7 @@ const quizData = {
   }
 },
 
-18: {
+31: {
   title: "Global Internet Access",
   tagline: "Sharpen your sense of the historical and current state of the world.",
   description: "What percent of people use the internet, now vs in 2000? For reference, the global average in 2022 was 64%.",
@@ -96,7 +96,7 @@ const quizData = {
   }
 },
 
-19: {
+32: {
   title: "Importance of Religion",
   tagline: "Sharpen your sense of the of the world.",
   description: "What percent of people say religion is very important or rather important in their lives, now vs in 2004?",
@@ -128,7 +128,7 @@ const quizData = {
   }
 },
 
-20: {
+33: {
   title: "Average Weekly Working Hours",
   tagline: "Sharpen your sense of the historical and current state of the world.",
   description: "How many hours per week did people work on average, now vs. in 1970?",
@@ -160,7 +160,7 @@ const quizData = {
   }
 },
 
-21: {
+34: {
   title: "College Enrollment Rates",
   tagline: "Sharpen your sense of the historical and current state of the world.",
   description: "What percent of young people are enrolled in post-secondary education now vs in 1980?",
@@ -192,7 +192,7 @@ const quizData = {
   }
 },
 
-22: {
+35: {
   title: "Access to Clean Drinking Water",
   tagline: "Sharpen your sense of the historical and current state of the world.",
   description: "What percent of people had access to clean drinking water in 2022 vs in 2000? For reference, global access has steadily improved, but large gaps remain.",
@@ -224,7 +224,7 @@ const quizData = {
   }
 },
 
-23: {
+36: {
   title: "Life Expectancy",
   tagline: "Sharpen your sense of the historical and current state of the world.",
   description: "How long do people live on average, now vs in 2003?",
@@ -256,7 +256,7 @@ const quizData = {
   }
 },
 
-24: {
+37: {
   title: "Global CO₂ Emissions per Capita",
   description: "Test your knowledge about CO₂ emissions per capita worldwide. As a reference, the global CO₂ emissions per capita in 2023 are approximately 4.7 metric tons.",
   sliderMin: 0,
@@ -287,39 +287,38 @@ const quizData = {
   }
 },
 
-// day 4 wednesday - literacy
-25: {
-title: "Global Literacy Rates",
-description: "Test your knowledge about literacy rates worldwide.",
-sliderMin: 0,
-sliderMax: 100,
-sliderStep: 0.1,
-currentYear: 2020,
-historicalYear: 2000,
-units: "percent",
-regions: ["World", "Sub-Saharan Africa", "China", "Europe and Central Asia", "Mexico"],
-currentAnswers: {
-  "World": 87,
-  "Sub-Saharan Africa": 68,
-  "China": 97,
-  "Europe and Central Asia": 99,
-  "Mexico": 95
-},
-historicalAnswers: {
-  "World": 81,
-  "Sub-Saharan Africa": 57,
-  "China": 91,
-  "Europe and Central Asia": 97,
-  "Mexico": 91
-},
-additionalContent: {
-  title: "Understanding Changes in Literacy Rates",
-  text: "Between 2000 and 2020, global literacy rates improved from 81% to 87%, reflecting steady progress in education access and quality. Sub-Saharan Africa saw a notable increase from 57% to 68%, driven by expanded primary education and international development efforts. China's literacy rate rose from 91% to 97%, continuing its long-term investment in universal education. Mexico improved from 91% to 95%, while Europe and Central Asia, already high in 2000 at 97%, reached near-universal literacy at 99%.",
-  source: "Source: https://ourworldindata.org/literacy"
-}
+38: {
+  title: "Global Literacy Rates",
+  description: "Test your knowledge about literacy rates worldwide.",
+  sliderMin: 0,
+  sliderMax: 100,
+  sliderStep: 0.1,
+  currentYear: 2020,
+  historicalYear: 2000,
+  units: "percent",
+  regions: ["World", "Sub-Saharan Africa", "China", "Europe and Central Asia", "Mexico"],
+  currentAnswers: {
+    "World": 87,
+    "Sub-Saharan Africa": 68,
+    "China": 97,
+    "Europe and Central Asia": 99,
+    "Mexico": 95
+  },
+  historicalAnswers: {
+    "World": 81,
+    "Sub-Saharan Africa": 57,
+    "China": 91,
+    "Europe and Central Asia": 97,
+    "Mexico": 91
+  },
+  additionalContent: {
+    title: "Understanding Changes in Literacy Rates",
+    text: "Between 2000 and 2020, global literacy rates improved from 81% to 87%, reflecting steady progress in education access and quality. Sub-Saharan Africa saw a notable increase from 57% to 68%, driven by expanded primary education and international development efforts. China's literacy rate rose from 91% to 97%, continuing its long-term investment in universal education. Mexico improved from 91% to 95%, while Europe and Central Asia, already high in 2000 at 97%, reached near-universal literacy at 99%.",
+    source: "Source: https://ourworldindata.org/literacy"
+  }
 },
 
-26: {
+39: {
   title: "Global Child Mortality",
   tagline: "Sharpen your sense of the historical and current state of the world.",
   description: "What percent of children died under the age of 5, now vs in 1950? For reference, the global average in 1950 was 23%.",
@@ -351,7 +350,7 @@ additionalContent: {
   }
 },
 
-27: {
+40: {
   title: "Global Internet Access",
   tagline: "Sharpen your sense of the historical and current state of the world.",
   description: "What percent of people use the internet, now vs in 2000? For reference, the global average in 2022 was 64%.",
@@ -383,7 +382,7 @@ additionalContent: {
   }
 },
 
-28: {
+41: {
   title: "Importance of Religion",
   tagline: "Sharpen your sense of the of the world.",
   description: "What percent of people say religion is very important or rather important in their lives, now vs in 2004?",
